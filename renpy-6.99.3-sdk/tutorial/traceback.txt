@@ -1,0 +1,101 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+Exception: Could not find font 'Soft Elegance.ttf'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in script
+    $ ui.interact()
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\ast.py", line 785, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\python.py", line 1445, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in <module>
+    $ ui.interact()
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\ui.py", line 277, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\core.py", line 2248, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\core.py", line 2577, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\core.py", line 1699, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 367, in renpy.display.render.render_screen (gen\renpy.display.render.c:5766)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\layout.py", line 629, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 99, in renpy.display.render.render (gen\renpy.display.render.c:2925)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\layout.py", line 629, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 99, in renpy.display.render.render (gen\renpy.display.render.c:2925)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\layout.py", line 629, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 99, in renpy.display.render.render (gen\renpy.display.render.c:2925)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\screen.py", line 597, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 99, in renpy.display.render.render (gen\renpy.display.render.c:2925)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\layout.py", line 629, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 99, in renpy.display.render.render (gen\renpy.display.render.c:2925)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\layout.py", line 995, in render
+    back = render(style.background, bw, bh, st, at)
+  File "renpy/display/render.pyx", line 99, in renpy.display.render.render (gen\renpy.display.render.c:2925)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\image.py", line 211, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\image.py", line 83, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "renpy/display/render.pyx", line 99, in renpy.display.render.render (gen\renpy.display.render.c:2925)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "renpy/display/accelerator.pyx", line 104, in renpy.display.accelerator.transform_render (gen\renpy.display.accelerator.c:1877)
+    cr = render(child, widtho, heighto, st - self.child_st_base, at)
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\display\layout.py", line 629, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 99, in renpy.display.render.render (gen\renpy.display.render.c:2925)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "renpy/display/accelerator.pyx", line 104, in renpy.display.accelerator.transform_render (gen\renpy.display.accelerator.c:1877)
+    cr = render(child, widtho, heighto, st - self.child_st_base, at)
+  File "renpy/display/render.pyx", line 175, in renpy.display.render.render (gen\renpy.display.render.c:2604)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\text\text.py", line 1524, in render
+    layout = Layout(self, width, height, renders)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\text\text.py", line 523, in __init__
+    glyphs = ts.glyphs(s)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\text\text.py", line 229, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\text\font.py", line 593, in get_font
+    face = load_face(fn)
+  File "C:\Users\Esana\Documents\College\HDCC209A\renpy-6.99.3-sdk\renpy\text\font.py", line 562, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'Soft Elegance.ttf'.
+
+Windows-8-6.2.9200
+Ren'Py 6.99.3.404
+Ren'Py Tutorial 6.99 "Here's to the crazy ones."
