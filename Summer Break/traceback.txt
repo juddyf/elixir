@@ -1,0 +1,27 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 17, in script
+    with fade (2.0)
+TypeError: 'MultipleTransition' object is not callable
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 17, in script
+    with fade (2.0)
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\ast.py", line 1275, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\exports.py", line 1376, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\display\core.py", line 2062, in do_with
+    clear=clear)
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\display\core.py", line 2492, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\display\core.py", line 2712, in interact_core
+    new_widget=layers_root)
+TypeError: 'MultipleTransition' object is not callable
+
+Windows-8-6.2.9200
+Ren'Py 6.99.12.2003
+Summer Break 0.0
