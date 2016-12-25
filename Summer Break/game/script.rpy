@@ -17,6 +17,9 @@ define r = Character('Romel')
 define q = Character('Quentin')
 define y = Character('Yejun')
 
+#Game Variables
+$ rp = 0 #romance points
+$ fp = 0 #friendship points? unlock scenes?
 
 # The game starts here.
 label start:
@@ -40,9 +43,9 @@ label start:
     scene black
     with dissolve
     
-#Start
+#Start - school background
 
-"The morning before my last day of junior year, my parents took extra care to hug and kiss me goodbye - definitely strange, because they had never been the most physically affectionate of guardians."
+"The morning before my last of junior year, my parents took extra care to hug and kiss me goodbye - definitely strange, because they had never been the most physically affectionate of guardians."
 
 "I really should have known from that."
 
@@ -87,4 +90,63 @@ h "Your accent has grown bad." #chinese
 
 h "And friends! We got in contact with them a while ago, and the company talked to their families. They all agreed. I just wanted to surprise you!" #chinese
 
+m "Who -"
+
+"???" "Hey, Mimi!"
+
+#pic of Leila, Blair and Sunny
+
+"I turn my head, and standing just a few feet away are three of my best friends, each of them wearing a slightly different amused grin."
+
+
+"Leila Kim." #pic of Leila comes forward a little?
+
+"Blair Dunn." #pic of Blair comes forward, leila goes back
+
+"Sona Darzi. (Also called affectionately, by me, 'Sunny'.)" #pic of sunny comes forward, blair goes back
+
+m "Are you serious?"
+
+s "Isn't it exciting?"
+
+l "Phantasy is summering here! And we're summering with them!"
+
+m "...You're very energetic."
+
+l "Well, duh, Mimi, I'm going to learn all their songs!"
+
+m "And, Blair, Sunny, you agreed to this because?"
+
+b "You mean aside from the fact that it's a free vacation?"
+
+s "And we get to bother you!"
+
+b "That, too."
+
+m "Oh. Great. Thanks."
+
+"I roll my eyes at my friends and then look back at Li, who is still beaming at me."
+
+h "Well?" #chinese
+
+"It's a demanding voice, and it throws me right back to my childhood."
+
+m "Alright, alright. Let's go!"
+
+scene black
+
+
+centered "Chapter One: {w=1.0} The Show"
+$ renpy.pause (2.0, hard=True)
+
+show white #car background
+with fade
+
+"Li brings the four of us out of the school and to the back field, which is normally used for soccer, but today holds a long, black limousine."
+
+m "Wow, that is subtle."
+
+h "Huh?" #chinese
+
+m "Nothing."
 
