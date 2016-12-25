@@ -1,1 +1,6 @@
-running ['C:\\Users\\Esana\\Documents\\Others\\elixir\\renpy-6.99.12-sdk\\lib\\windows-i686\\zsync.exe', '-o', 'C:\\Users\\Esana\\Documents\\Others\\elixir\\renpy-6.99.12-sdk\\update\\editra-windows.update.new', '-k', 'C:\\Users\\Esana\\Documents\\Others\\elixir\\renpy-6.99.12-sdk\\update\\editra-windows.zsync', '-i', 'C:\\Users\\Esana\\Documents\\Others\\elixir\\renpy-6.99.12-sdk\\update\\editra-windows.update', 'http://update.renpy.org/6.99.12/renpy-6.99.12-editra-windows.zsync']
+Traceback (most recent call last):
+  File "renpy/common/00updater.rpy", line 329, in run
+    self.update()
+  File "renpy/common/00updater.rpy", line 413, in update
+    raise UpdateCancelled()
+UpdateCancelled

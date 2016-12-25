@@ -207,7 +207,7 @@ init -1 python hide:
     ## Transitions.
 
     ## Used when entering the game menu from the game.
-    config.enter_transition = None
+    config.enter_transition = fade
 
     ## Used when exiting the game menu to the game.
     config.exit_transition = None
@@ -228,7 +228,7 @@ init -1 python hide:
     config.end_game_transition = None
 
     ## Used when a game is loaded.
-    config.after_load_transition = None
+    config.after_load_transition = fade
 
     ## Used when the window is shown.
     config.window_show_transition = None
@@ -278,8 +278,8 @@ init -1 python hide:
 
     ## The default text speed in characters per second. 0 is infinite.
 
-    config.default_text_cps = 0
-
+    config.default_text_cps = 35
+    
     ## The default auto-forward time setting.
 
     config.default_afm_time = 10
