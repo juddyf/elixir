@@ -1,24 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 177, in script
-    $ frienship_points += 1
-  File "game/script.rpy", line 177, in <module>
-    $ frienship_points += 1
-NameError: name 'frienship_points' is not defined
+  File "game/script.rpy", line 377, in script
+    y "I want to see how it looks. [i]Go.[/i]" #korean
+KeyError: u'i'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 177, in script
-    $ frienship_points += 1
-  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\ast.py", line 814, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\python.py", line 1695, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/script.rpy", line 177, in <module>
-    $ frienship_points += 1
-NameError: name 'frienship_points' is not defined
+  File "game/script.rpy", line 377, in script
+    y "I want to see how it looks. [i]Go.[/i]" #korean
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\ast.py", line 613, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\exports.py", line 1142, in say
+    who(what, interact=interact)
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\character.py", line 867, in __call__
+    what = what_pattern.replace("[what]", sub(what, translate=translate))
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\character.py", line 849, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\Esana\Documents\Others\elixir\renpy-6.99.12-sdk\renpy\substitutions.py", line 232, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 563, in vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in _vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 646, in get_field
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 605, in get_value
+KeyError: u'i'
 
 Windows-8-6.2.9200
 Ren'Py 6.99.12.2003
