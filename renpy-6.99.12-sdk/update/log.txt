@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "renpy/common/00updater.rpy", line 329, in run
-    self.update()
-  File "renpy/common/00updater.rpy", line 413, in update
-    raise UpdateCancelled()
-UpdateCancelled
