@@ -2,8 +2,6 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 513: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-         k "I like that one. It makes you look very cool.
+File "game/script.rpy", line 816: indentation mismatch.
 
 Ren'Py Version: Ren'Py 6.99.12.2003

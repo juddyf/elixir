@@ -203,7 +203,7 @@ l "They're a good band. I tell you about them at least once a week!"
 
 m "...I have no memory of this."
 
-"To Minseo's left, there is Jungsu, one of the lead dancers and main singers. He has a wide, easy smile in an open face and looks very comfortable ensconced between Minseo and the last member of Phantasy, Romel."
+"To Minseo's left, there is Jongsu, one of the lead dancers and main singers. He has a wide, easy smile in an open face and looks very comfortable ensconced between Minseo and the last member of Phantasy, Romel."
 
 "Romel is the other lead dancer and makes a cheesy peace sign when Li introduces him, almost hitting Blair, who is sitting on his other side, in the face. She ducks and then glares as Romel hastily apologizes. Fans found his clumsiness 'charming', though by the looks of it, Blair didn't really agree."
 
@@ -247,7 +247,7 @@ r "He's going to skip out on everything!"
 
 "Romel pouted at Minseo, who just looked smugly back, as Leila translated the words. It was quite dizzying, the whole array of languages being spat around."
 
-"Quentin and Minseo were talking in English, belying anything Minseo might have told his producers, Li was switching between Chinese and Korean, sometimes mid-sentence, Leila was switching between Korean and English, Sunny and Blair stuck to English with occasional Korean from Blair, who had learned it from watching Korean drama shows, and Yejun, Romel, and Jungsu spoke in Korean with just enough English thrown in to make it really confusing."
+"Quentin and Minseo were talking in English, belying anything Minseo might have told his producers, Li was switching between Chinese and Korean, sometimes mid-sentence, Leila was switching between Korean and English, Sunny and Blair stuck to English with occasional Korean from Blair, who had learned it from watching Korean drama shows, and Yejun, Romel, and Jongsu spoke in Korean with just enough English thrown in to make it really confusing."
 
 "I shook my head, trying to clear some of the stray words out of it and focus on what Minseo had said."
 
@@ -335,7 +335,7 @@ $ renpy.pause (2.0, hard=True)
 show white #limo
 with fade
 
-"In the end, we decide to separate into two groups, with me, Leila, Yejun, Li, and Minseo going shopping for clothes, while Sunny, Blair, Jungsu, Quentin, and Romel going shopping for food."
+"In the end, we decide to separate into two groups, with me, Leila, Yejun, Li, and Minseo going shopping for clothes, while Sunny, Blair, Jongsu, Quentin, and Romel going shopping for food."
 
 m "I'd way rather go shopping for food. Blair, you like clothes shopping. Switch with me."
 
@@ -517,5 +517,623 @@ else:
 "Eventually, we get to the front of the line. Minseo talks to the cashier, Yejun pays, and Li ends up bringing all the stuff back to the car. Yejun surveys the load after we all get in."
 
 y "Well, I think that was a successful trip."
+
+scene black
+
+centered "Chapter Three: {w=1.0} The House"
+$ renpy.pause (1.0, hard=True)
+
+show white #house
+
+"We arrive at the house a little bit later. It is quite large, but then I suppose it has to be to hold ten people comfortably. It looks to be two stories high, rather wide, with a round window at the top that I'm certain leads to an attic."
+
+"The others are already inside, unpacking in the kitchen, when we walk in. Jongsu looks up and beams at us, then nudges Romel."
+
+"Romel & Jongsu" "Welcome home!"
+
+l "Awww. We're home!"
+
+b "Hey, you guys finally made it. We're going to start dinner soon."
+
+m "Ooo, what's for dinner?"
+
+s "We're making kimchi hot pot! I've never had it before, but it sounds yummy."
+
+b "Come upstairs first though. I wanna see the clothes, and we have to pick rooms."
+
+"Blair leads the way upstairs, Sunny and Lei close behind her while I bring up the rear. Upstairs is carpeted as compared to the wood floors of the downstairs, and it looks soft and lush as we head towards the end of the hall."
+
+b "We're on this side. They're on the other side."
+
+"She points down the hall, where I can see more doors leading to either side of the hall. Blair points at two doors at the end of the hall, whose doors are slightly open."
+ 
+b "We have these two."
+
+"She nudges the doors open more. Both the rooms have two twin sized beds with a giant window on one side, and besides the vaguely different views, they look identical."
+
+m "What are we choosing between here? They're the same."
+
+s "No, they're not! Look!"
+
+"Sunny throws open the curtain to the window of the room to the left and points down at the ledge."
+
+m "...What am I looking at?"
+
+s "The ledge here is like a foot shorter than it is in the other room."
+
+"I look at Lei, who is smiling, Blair, who seems to be resisting rolling her eyes, and then back at Sunny."
+
+m "Oh. No. I see it now. You're right. I think I'd prefer this room."
+
+"She somehow misses the sarcasm by a mile and just nods understandingly."
+
+s "Okay! We can take this room then. And Blair and Lei can take the other one."
+
+l "Okay!"
+
+b "Whatever."
+
+"We unpack out stuff somewhat. Luggage has been sent over from our houses, and Blair and Sunny are eager to try on the clothes that we bought them."
+
+"About half an hour later, we head downstairs, where there are loud noises coming from the kitchen and living room. The guys are all clustered in the area in between, Quentin, Romel, Li and Jongsu crowded around Yejun and Minseo."
+
+"Yejun and Minseo" "Kai bai bo!"
+
+"I peer between Jongsu and Li. Yejun is glaring at Minseo, both hands held out in front of him, one palm turned up, the other one in a fist on top of the first hand. Minseo had a similar pose, but was grinning."
+
+k "Come on, hyung." #korean
+
+m "Are they playing rock-paper-scissors?"
+
+l "Yep. Kai bai bo!"
+
+"She brandished a fist, almost whacking Romel in the head."
+
+m "What are you playing for?"
+
+h "Loser has to help me and Romel cook. You wanna help, Mimi?" # chinese
+
+m "Uh... what's my other option?"
+
+j "You could come play video games in other room with me and Quentin."
+
+l "Ooo! I wanna play video games."
+
+b "I can help you guys cook."
+
+menu:
+     "Yeah, I can help cook.":
+          jump cooking_li
+
+     "Mmm... I think I'm gonna go with the games.":
+          jump vg_jongsu
+
+label cooking_li:
+     $ friendship_points +=1
+     m "Yeah, I'll help, too."
+     s "I'll go with you then, Quentin."
+     q "Okay!"
+     h "Yay! Mimi!" #chinese
+     "He hugs me with one arm and then tugs me along to the kitchen. Over my shoulder, I can hear Yejun and Minseo still shouting and then a cry of despair that sounds like it's coming from Yejun."
+     "Looking over my shoulder, I see Minseo with both arms raised in the air in triumph as Yejun, who has fallen dramatically back against Romel, lays a delicate hand to his forehead."
+     "Grinning, I turn back towards the kitchen."
+     h "Are you having fun, Mimi?" #chinese
+     m "Uh, like so far? Yeah, I think so. I really can't believe my parents agreed to this though." #chinese
+     h "It took a lot of convincing, but I think they trust me. A little less so since I became an idol, but they still know I'll protect you. I did used to change your diapers after all." # chinese
+     m "Ew, can we not talk about that when we're going to cook something?" # chinese
+     "He ignores me, babbling on as he rummages around in the fridge to get the ingredients. I look around for any cookware I can start preparing, even though I'm not quite sure what we're doing."
+     h "Get the big pot with the wide base. You were such a cute little kid. You used to follow me around. It was like having my own little sister." #chinese
+     m "That's pretty much what I was, so that makes sense. What do I do with this?"
+     "From behind me, I hear a dramatic sigh. Romel has gently towed Yejun into the kitchen, though he is still support Yejun's wait. Blair has followed them and is giving Yejun a faintly exasperated look."
+     h "Yejun, stop being so lazy. Cooking isn't going to kill you. Romel and I cook all the time." #korean
+     r "Hyung, it's really not that bad. You can cut up the kimchi." #korean
+     "Without any of our translators in the room, Li ends up translating what he's saying to Chinese, so that I can then translate for Blair, who is still watching everything with faint exasperation."
+     "Romel sets up Yejun with the knife, the latter muttering something rude and that Li doesn't translate. Li starts up with the meat on the other cutting board, and I set the water boiling. Since there really isn't that much to do, Romel and Blair start up on the dessert."
+     "It's quite entertaining to watch them attempt to work on it together, as Romel is attempting to use his English, which for some reason is mostly tourist English, and Blair ends up both confused and very amused."
+     "She's giggling at the end of it, when they slide the lava cakes into the oven, and Romel has resorted to wild arm gestures to get his point across."
+     h "How's the soup?" #chinese
+     m "Spicy. I'm tearing up." #chinese
+     "He ducks over my shoulder to taste it and makes a noise of satisfaction."
+     h "Delicious. We should get it ready -" #chinese
+     l "Is it done yet?"
+     "Lei's strident voice came cutting through the kitchen air, and she, Jongsu, Quentin, and Sunny come tumbling through to the entrance of the kitchen, sniffing eagerly."
+     s "Ooo, it smells so good."
+     "She comes up right behind me to take a sniff as Jongsu hops to the other side and sneaks a bite."
+     m "Hey!"
+     "I whack at his hand with the spoon I'm using, and though I don't make contact, he backs off, licking his finger."
+     j "It's tasty!" #korean
+     l "What? I want some!"
+     m "Oh my God, we're almost done. Go wait in the dining room."
+     "There's some more whining and complaining and some muttering about how I might be a tyrant (mostly from Lei), but Quentin and Minseo eventually grab some bowls and cutlery and bring it to the dining room to set up the places."
+     jump firstday_dinner
+
+label vg_jongsu:
+     $ romance_points +=1
+     m "Mmm... let's see, I could cook or I could play video games... I think I'm going to go with the video games."
+     "Li clutches his heart as if I've mortally wounded him."
+     h "Mimi, you don't want to spend time with me?" #chinese
+     m "...I don't want to do work."
+     s "I'll come help with the cooking."
+     "Li looks only the mildest bit mollified, but perks up when Yejun loses the rock-paper-scissors war and is dragged to the kitchen by him and Romel, with Sunny and Blair following."
+     "The triumphant Minseo, who receives a high five from Lei, leads us to the living room, where he places himself on one of the couches with deep satisfaction, spreading out his arms."
+     "He doesn't get to stay relaxed for very long though, because Jongsu dive-bombs him a second later, and Lei, deciding it looks fun, follows suit. Minseo makes a strangled noise as he gets buried."
+     "I laugh watching them and then start to rummage in the drawers under the TV."
+     m "What do you want to play?"
+     "There's no response, and when I look behind me, Quentin has joined the pile. I roll my eyes and chuck a convenient cushion at them."
+     m "Hey!"
+     "Jongsu's head pops out, and he looks at me remorsefully, though his eyes brighten when he sees the games I'm holding. He wiggles his way out of the pile and rolls his way over to me, landing neatly, though his hair is in disarray."
+     m "What do you want?"
+     j "Hmm... what do you want?" #chinese
+     "I blink at him in surprise for a second because his response wasn't in Korean, but in Chinese."
+     m "You speak Chinese?" #chinese
+     "He shrugged shyly, taking some of the games from my hand and flipping them over to read the backs."
+     j "Just a little. We do tours there almost every year, and I try to learn when I have time." #chinese
+     m "...Do you have any time? Li used to visit me like every summer and the holidays, and he hasn't in years cause of Phantasy." #chinese
+     "Another shrug, and he looks up at me. Even this close, his skin looks flawless, and he has the loveliest eyes, smoked mahogany and warm with the traces of fire."
+     j "It's worth it to hear the fans happy." #chinese
+     "There is a crash behind me, and when I look, the other three have fallen off the couch, followed by two of the sitting cushions."
+     l "Mimi, help!"
+     "They are jammed between the couch and the coffee table, which has scattered cards and mugs across it. Rolling my eyes, I get up and carefully edge the table back so that the three can untangle themselves and get to their feet, faces flushed."
+     "By the time I turn back, Jongsu has picked a game and is handing out controllers, of which there are only four."
+     q "I can sit out this round. I'll take loser's spot?"
+     "We readily agree. Minseo, Quentin, and Lei take their spot on the couch after they repair it, while Jongsu and I get settled on the one facing the TV."
+     "The game Jongsu has picked is a fairly straightforward racing game, with the usual power-ups and debuffs. I manage to eke out a not losing position in the first few rounds, but once the field changes to one where there aren't walls on either side, I spend most of my time being picked up and placed back on the track."
+     "At the end of the round, I am terribly exasperated, but I surrender my controller with an eyeroll."
+     m "At least I can drive in real life."
+     k "I don't think there are giant mushrooms in the road in real life."
+     m "...Crush him, Jongsu."
+     "Jongsu laughs and then turns his controller so he rams into Minseo just as they're rounding an unguarded corner. Minseo looks on in mild horror as his cart flies off the screen."
+     k "Hyung! Why! Betrayal!"
+     "We switch out for a puzzle game next and then one involving deactivating a bomb, which turns around very interesting because during moments of panic, everyone just reverts to their first language, meaning there's a lot of multilingual yelling going around."
+     l "The red wire, the red wire!"
+     k "There isn't a red wire!" #korean
+     m "No, it's black, then yellow! He said there's no -"
+     "{i}BOOM{/i}"
+     "We all turn to gape at the screen, and then I flop over, throwing my arms up and nearly hitting Jongsu in the face."
+     m "God dammit, Lei."
+     l "Whatt. It wasn't my fault."
+     q "That was stressful." #korean
+     j "It was. I thought you would be better at giving instructions."
+     m "I was fine at giving instructions. Lei, on the other hand."
+     "Sympathetically, Jongsu gives me a pat on the head, and before the bickering could escalate, there is a call from the other room, and then Blair pokes her head out."
+     b "Hey. Dinner's ready. Come eat."
+     jump firstday_dinner
+
+label firstday_dinner:
+     "The smell of the kimchi hot pot burns my nose, but at the same time, it's incredibly fragrant."
+     j "It smells sooo good." #korean
+     k "It really does." #korean
+     s "Let's eat!"
+     "Li serves us all, starting with me and then Yejun, who grumbles about how he should be first since he's the oldest. Li points out that Yejun has maybe two months on him, and Yejun sits huffily back as Li continues on."
+     "When everyone has been served, we all begin to dig in."
+     s "Omigod, this is so spicy."
+     m "Isn't it great?"
+     r "I'm dying." #korean
+     "Snorting with laughter, Blair hands him a tissue to wipe his face, which has turned bright red."
+     q "Water, where's the water?"
+     "There's scrambling for a few minutes until everyone gets settled. Like everyone else, I'm sweating, but it's a nice heat and tasty besides."
+     "After dinner, there are lava cakes, prepared carefully, if a bit messily, by Romel and Blair."
+     m "This is really good. You have a gift, Blair."
+     b "Thanks. Romel did most of it, actually. Please don't talk with your mouth full. It's gross."
+     "I make a face at her and offer the remaining quarter I have left to Li, who shakes his head. Jongsu takes it at the offer and woofs it down, leaving a spot of chocolate at the corner of his mouth."
+     "Grinning, I grab a napkin and swipe at it."
+     "After dinner comes some relaxing in the living room, where Romel, Jongsu, and Lei have an impromtu dance battle and then the two begin to teach Lei one of their more recent dances, before I catch Sunny yawning."
+     "A second later, I yawn as well, and I see Quentin yawn less than 30 seconds later."
+     m "Okay. I think it's time for bed. For me, at least. Hey."
+     "I tug on Li's sleeve, give him a hug."
+     m "Good night. I'm looking forward to the summer." #chinese
+     "He beams at me, and I head towards the stairs."
+     
+     if romance_points >0:
+        "Before I can make it, Jongsu catches my arm, and I stop to look back at him. His hair is mussed from the dancing, but he still looks fresh-faced and energetic."
+        j "Good night, sleep tight."
+        m "Thank you."
+     else:
+        "It's gonna be a fun summer."
+
+scene black
+
+centered "Chapter Four: {w=1.0} Meetings"
+$ renpy.pause (1.0, hard=True)
+
+show white
+
+"I am drifting in a sea of white when I become aware of a yelling in the distance. It gradually grows closer, and then -"
+
+h "Mimiiiiiiiii!!!!!"
+
+"My eyes fly open as at the same time the door to my and Sunny's room flies open, and Li bursts in, far too awake for the time of morning. I grab my pillow and chuck it at Li. It hits him in the face, and as soon as it drops, Sunny's pillow hits him as well."
+
+"I can't help, but snicker. Sunny, unlike Blair and I, is much harder to annoy, but then, early mornings are hard for everyone."
+
+"From beneath the pillows, I hear a moan."
+
+h "Wh-why, Mimi?" #chinese
+
+"I check my phone."
+
+m "It's 8AM on the first day of summer break. Let me {i}sleep{/i}." #chinese
+
+"There's a groan from the other bed that tells me that Sunny agrees with me a hundred percent."
+
+"Jongsu and Quentin poke their heads in, see Li on the floor, and then duck out again."
+
+m "Seriously, get out." #chinese
+
+"From the door, there is a muffled sound and a clearing of a throat."
+
+q "There's actually something... well, you know the TV show? Our managers wanna talk to you."
+
+m "Oh. My. God - NOW?!"
+
+q "They're waiting in the dining room."
+
+m "...Go wake up Blair. If she gets up, I'll get up."
+
+"I throw myself under the covers, fairly certain that the task is impossible. However, less than five minutes later, the covers are yanked back viciously by a very grumpy looking Blair."
+
+m "Wha - How -"
+
+b "Romel promised me cupcakes. Get up. Let's get this over with."
+
+"I blink, disoriented, as she goes and does the same to Sunny, and then when she starts to make her way back to me, I scurry out of bed."
+
+"There are actually a couple managers waiting downstairs, who both look far too awake for this time of morning. The four of us are in various stages of liveliness. Lei and Sunny are both quietly sleepy, while I am rumpled, and Blair looks like she is being run exclusively by anger."
+
+"Manager #1" "Hi, it's nice to meet you guys. We're going to be taking care of the show."
+
+"They introduce themselves, though the names completely escape me."
+
+"Manager #2" "We're sorry to get you up so early, but we just wanted to talk about some things before we officially got started with filming."
+
+"One of them hands over four copies of large stacks of paper, which seems to be guidelines to filming. I flip through it without really seeing it as they keep on talking. Most of the conversation is just them clarifying what the show is and how they're going to go about filming it."
+
+"They want to publish it online via a Youtube channel, with lessons being filmed for the first three weeks or so and then published every Monday and Friday."
+
+"Manager #1" "It should go on for about three months, and we'll start uploading next week, assuming we're ready."
+
+m "And the rest of the time is just free time?"
+
+"Manager #2" "Well, we hoped that we might be able to convince you to vlog about your vacation, both during the filming and afterwards, and we'll upload it to another channel. It'll be good exposure for both you and Phantasy. What do you think?"
+
+"Out of the corner of my eye, I see movement, and when I glance to the side, I can see figures ducking out of sight. The guys are eavesdropping."
+
+l "...It might be fun..."
+
+s "But it'll be kind of creepy."
+
+b "I don't really like that. I kinda don't want to feel like everyone is watching me all the time."
+
+s "Yeah!"
+
+m "Yeah, I'm not too big a fan either."
+
+"Manager #1" "May I ask why?"
+
+menu:
+     "It's an invasion of privacy.":
+          m "Well, it's an invasion of privacy. This is supposed to be a vacation for us, and I'm with Blair. I don't want people tracking me. I'm okay with the English lessons, cause that's controlled and scripted, but... not this."
+     "Phantasy deserves a break.":
+          $ friendship_points += 1 #max = 5
+          $ romance_points += 1 #max = 2
+          m "I haven't seen Li in years cause he's always working so hard with Phantasy. Phantasy deserves a break. They all work really hard. And they can't really relax if they're going to have to keep their faces on all the time for the vlog. I don't want to do it."
+
+"They looked disappointed, but nod their nods."
+
+"Manager #2" "Alright then. We'll start filming this afternoon. It's a pleasure to finally meet you four."
+
+"Both of them shake all four of our hands, and then they depart after a brief conversation with Yejun."
+
+"As soon as the door closed, Sunny let out the biggest yawn."
+
+s "I'm going back to bed."
+
+b "Yes. Good idea."
+
+m "Lei?"
+
+"Lei yawned as well, but shook her head."
+
+l "I'm awake now. I'm hungry. Did you guys buy apples yesterday?"
+
+b "I think so. Check the fridge."
+
+"The two trudge upstairs, while Lei bounds over to the kitchen at about 3/4 full energy. I follow her, stifling my own yawn. Why do they have to be so contagious?"
+
+"Li is cooking up something on the stove when we walk in. He pats Lei on the head and hugs me with one arm."
+
+h "Thanks." #chinese
+
+"His voice is quiet, low, and for a second, I think I misheard."
+
+m "What?" #chinese
+
+h "For saying no to the vlogging. It'll be nice to actually take a break without cameras. I'm excited." #chinese
+
+m "I am, too. Do we have plans?" #chinese
+
+h "Not really. We'll find something though. Or we can just relax here. It's nice to get a break." #chinese
+
+"He grins at me and nudges me."
+
+h "Go find plates. Yejun is going to be up soon, and he'll complain if he doesn't have breakfast." #chinese
+
+m "Oh, so this is all for Yejun? What about the rest of us?" #chinese
+
+h "You'll come up with something." #chinese
+
+"Rolling my eyes fondly, I rummage in the cabinets until I find enough plates for the six of us who are awake, since Blair and Sunny went back to bed, and I've yet to see Romel or Minseo."
+
+"I set up the plates in the dining room, Li comes in five minutes later with the food - egg fried rice - and half a minute after that, Quentin, Jongsu, and Lei come rolling in."
+
+m "You guys are like dogs to slaughter."
+
+q "I don't think that's what the expression is."
+
+"I wave him off, digging into the food."
+
+h "So Mimi brings up a good point. What do you guys want to do after filming is done?" #korean
+
+l "Amusement park?"
+
+m "That's like a one day thing, though."
+
+l "We could spend like a week there."
+
+m "...Yes, but who wants to?"
+
+l "I do. What do you want to do?"
+
+menu:
+     "Hiking.":
+          m "Mmm... what about hiking? We could do like a camping trip or something like that."
+          l "Eww, peeing out doors."
+          h "I think it would be fun. There are some really good trails around here, I think." #chinese
+          m "And, it wouldn't involve roller-coasters either."
+     "Go to the beach.":
+          m "I think I'd want to go to the beach."
+          l "Ooo, that would be fun."
+          h "Mimi, you're being so cliched. That's what everyone says." #chinese
+          m "The beach is awesome. You can sit in the sun and relax or swim or walk along the boardwalk or just stare at how unbelievably large and wonderful and vaguely terrifying the ocean is."
+          $ romance_points +=1
+          j "I love the ocean. It can make all your problems seem so small." #korean
+          "The first part is in English, but the second part is in Korean, his voice dropping a little. I glance at him, and his eyes are a little wistful, but he smiles when he sees me looking, expression still soft."
+
+"We continue to discuss ideas - there are also suggestions to do touristy things, since it is some of their first time in the US - and we're still talking when Yejun comes down and even, way later, when everyone else gets up."
+
+"At that point, most of us clear out the kitchen, though Quentin opts to stay behind with Sunny complaining that we didn't leave her any food as Romel sleepily rummages in the fridge."
+
+"We try to go to the living room, but there's a camera crew setting up in there, so we wander around, pausing briefly in the study, which has a bookshelf with no books and a beautiful desk with no chair."
+
+"Jongsu and Li fight briefly over who gets to sit on top, while Lei and I discuss what books the bookshelf should have and then discover that there is actually one book: the Bible."
+
+"There's a nice sun-room near the back of the house, with a patio, but there are crew members back there, too, so the four of us scurry upstairs. Lei chooses to go harass Minseo, and I consider for a moment doing the same for Blair, but then I decide that I value my life too much."
+
+"With a very sleepy Minseo in tow, we find the door to the attic and make our way up there. I find the window that I saw yesterday and peer out it at the driveway and the presence of the crew cars."
+
+m "Do they really need that many people to film us teaching English?"
+
+k "Oh, I forgot that was happening today."
+
+l "In the afternoon."
+
+m "But I guess it doesn't matter for you, cause you aren't going to be involved right."
+
+"He grins a little smugly."
+
+k "Yep."
+
+l "How did you convince them your English wasn't good enough? It's sooo good."
+
+k "But they don't know that."
+
+l " You're speaking in English right now! I'm gonna tell them."
+
+"They go back and forth as I turn to Li and Jongsu and switch to Chinese."
+
+m "Are you guys looking forward to learning English?" #chinese
+
+h "It's going to be so much work." #chinese
+
+j "I think it'll be fun. We're going to start touring here next year." #chinese
+
+m "Yeah? That's really awesome. Lei will be super excited." #chinese
+
+j "Not you?" #chinese
+
+"He smiles shyly, absently running a hand through his hair."
+
+m "Mmm... concerts aren't really my thing." #chinese
+
+h "Mimi! Are you saying you wouldn't come see me perform?!" #chinese
+
+"I give Jongsu a look, which I hope gets across my message that I am blaming him for what's happening. He grins full out now and shrugs his shoulders."
+
+m "I'd come, I'd come." #chinese
+
+"Around two, Sunny comes up to get us so we can start filming. We go off in pairs, starting with me and Lei introducing ourselves to the camera and then Sunny and Blair."
+
+"Yejun is staring at me in mild disgust when the director calls cut."
+
+m "What?"
+
+y "What happened to your voice?" #korean
+
+m "Huh?"
+
+"Before I come to an understanding of what he means, Lei butts in."
+
+l "It's her teacher voice. So that they'll think she's {i}sweet{/i}."
+
+"She wrinkles her nose in disgust, and I elbow her."
+
+m "I am sweet to them."
+
+"Yejun makes a face and walks away to film his intro with the rest of Phantasy."
+
+"The plan is to film eight 20-minute episodes every week, which doesn't sound so bad at first, but by the end of the first week, I'm fairly exhausted and have reverted to my normal voice. It startles the managers at first, but they don't say anything about it, so I just continue on with it."
+
+"The first episode is put up on the second day of the second week, and Sunny and Lei make me watch it with them, even while Blair insists that she doesn't want to watch herself."
+
+"It's less cringe inducing than I thought it would be, but I still can't listen to the sound of my voice for more than a couple minutes before I fight my way out of the room."
+
+m "Ugh. Gross."
+
+scene black
+
+centered "Chapter Five: {w=1.0} Extracurriculars"
+$ renpy.pause (1.0, hard=True)
+
+show white
+
+"Phantasy works hard at their English both during filming and afterwards, with Quentin and Lei giving addition lessons. Minseo, Sunny, Blair, and I help out pretty often, but none of us are as good as the other two at both English and Korean, though Blair is learning fairly quickly."
+
+"The morning after the first episode goes up, I wake up when the sun has barely cracked through the window, quite a feat since it's almost full summer."
+
+"Quietly, I sneak out of bed and make my way downstairs. Everything is terribly quiet and peaceful at the same time. I look in the fridge, make a face at the apples, and then wander out of the kitchen."
+
+"I wind up in the sun-room, settling in at the window ledge. It holds an almost perfect view of the sunset, hampered by one little tree that was probably planted after the house was made."
+
+"There are padding steps behind me, and Jongsu steps into the room, yawning. He pauses when he sees me and then smiles, early morning light streaking across his face."
+
+m "Good morning."
+
+j "Good morning. It's early."
+
+m "...I woke up. I can't fall back asleep when I wake up."
+
+"He sits on the window ledge, leaning against the other wall so that he is facing me and pulls a leg up to his chest."
+
+j "Are you having fun?"
+
+m "Yeah. Of course. I mean - it's tiring, but it's fun."
+
+"I look at him, wondering what to ask him in return."
+
+menu:
+     "What do you want to do today?":
+          j "Hm... well, Romel bought some watermelon yesterday."
+          m "Ooo, watermelon smashing?"
+          "His eyebrows wrinkle up, and he mouths the words back at me. He's been picking up English fast, having put in more work than almost anyone."
+          m "It's a game. You put the watermelon on the ground and then you blindfold someone and spin them around, give them a bat, and have them try to break the watermelon." #chinese
+          "It takes a couple more tries to get him to understand what I'm saying, as even his Chinese finds it difficult to keep up, and my Chinese is just barely good enough as it is, but when he gets it, his eyes light up, and he laughs."
+          j "Isn't that a waste of watermelon?" #chinese
+          m "It's a creative way to eat watermelon." #chinese
+     "Are {i}you{/i} having fun?":
+          $ romance_points +=1
+          "His eyes flicker a moment, as if in surprise, but his expression fades back to his normal, cheerful smile after a moment, and he nods."
+          j "I like it. We all spend a lot of time together, but not that much when we aren't working. We're all busy."
+          m "Yeah, Lei mentioned that. Minseo acts, and Yejun hosts."
+          j "Yeah, we all have a lot of activities."
+          "He pauses for a moment, hesitating."
+          j "It can get lonely." #chinese
+          "I blink at him and then reach out and nudge his foot with mine. He looks away from the sunrise and smiles, and there is sunlight caught in his gaze."
+          j "I'm glad we got to meet you. Li's told us a lot about you. He really loves you." #chinese
+          m "I love him. He's my older brother. Even if it's not by blood." #chinese
+          j "Thanks for asking about me." #chinese
+          m "Yeah, of course. I hope we keep having fun."
+          "He lays his leg flat so that it's pressed against mine, and we watch the sunrise."
+
+"When the sun is a few inches above the horizon, we hear the first sounds of activity. Li is first down, active as he always is. He greets me with his morning hug and then asks if I want to go on a morning run with him."
+
+m "Oh God. No. Never. I only run for volleyball, and even that, I do with the utmost reluctance." #chinese
+
+"Jongsu perks up at 'volleyball', and for a moment, I imagine him as a dog with a wagging tail."
+
+j "Volleyball? You play volleyball?" #chinese
+
+m "We all do. It's how we met. Well, it's how I met Sunny and Lei. Blair went to my middle school." #chinese
+
+j "Let's go play!"
+
+m "...Uh... is there a place around here?"
+
+j "Yeah! There's a gym nearby that has a court. Let's go." #chinese
+
+"He starts to drag me upstairs, presumably to get the others. I look over my shoulder at Li, who shrugs and grins."
+
+m "Do you play?" #chinese
+
+j "No, but you can teach me. I play soccer."
+
+m "...Yes, those two are very interchangeable."
+
+"He finds little success rousing Blair or Lei, who has the protection of Blair being in the same room, but manages to get a very sleepy Sunny up and then proceeds to wake the rest of Phantasy. Yejun refuses outright, Minseo equivocates, but Romel and Quentin both agree."
+
+j "And with Li, that's four of us, and four of you." #chinese
+
+m "So we can play quads. I wouldn't recommend it though. We were second in the state last year." #chinese
+
+j "Ooo ~ So you're good."
+
+m "Eh."
+
+"It takes another half hour to get Lei up and only with alternating persuasion from Lei, me, Romel, and Jongsu does Blair finally roll out of bed and get herself ready."
+
+"It's a short walk in warming sunlight outside to the gym, and luckily, it seems pretty empty. Most of the early morning people have already gone to work, so we have the court, at the very least, to ourselves."
+
+"Li forces us to jog to warm up, completing several annoying laps, and then Sunny and I start teaching the guys how to pass - the most fundamental skill - and set (less fundamental, but still important) while Blair and Lei warm up their arms."
+
+"When they're finished, I go to pepper (a combination of pass, set, and spiking between two people without a net between them) with Lei while Blair takes my spot with Sunny, starting them on spiking or hitting the ball."
+
+"About two minutes in, I glance over, and the guys are all staring."
+
+m "What?"
+
+"Minseo, who tagged along, but isn't participating is the one who finally responds from the corner, where he's sitting on his phone."
+
+k "How are you not dead if she hits at you like that?"
+
+"I look at Lei in mild confusion. We have been peppering partners for a long time, though I did have a vague understanding that most people found Lei's hits, wild at the best of times, scary."
+
+m "It's good for both of us. She warms up her arms, and I get to practice digging."
+
+"There's more staring."
+
+r "...I don't wanna play against her." #korean
+
+q "Me either."
+
+s "You shouldn't. She's scary."
+
+l "I'm not scary! Blair hits well."
+
+k "Sure, but Blair doesn't look like she's going to kill someone every time she hits."
+
+m "Yeah, only half the time."
+
+b "Shut up, Mimi."
+
+"We practice a little more until all of us are feeling warm, and then we split so that Lei, Sunny, Jongsu, and Romel are on one side with Blair, me, Li, and Quentin on the other, as Minseo takes the reluctant position of referee, even though he clearly has no idea what's happening."
+
+"Though there are actually a few good rallies, most of the runs end in Jongsu and Romel running into each other or Quentin or Li running away from Lei's hits."
+
+q "It's a bomb!"
+
+b "It's not a bomb, just get behind it!"
+
+m "Quentin, just duck, and I'll get it."
+
+q "But if I duck, it'll hit me."
+
+b "You're not ducking right!"
+
+h "Mimi, this is scary. You have scary friends."
+
+m "You invited them on this. I take no responsibility."
+
+"From the other side, Jongsu, Romel, and Sunny are cheering. Out of vengeance, I serve the ball straight between Romel and Jongsu, who watch it drop between them and then begin arguing over who should have gotten it."
+
+"The game ends rather climatically when Lei hits a ball way out of bounds, and it flies towards the door to the gym as it slides open, smacking the newcomer in the face. The ball drops down, and the newcomer's head drops down -"
+
+h "Oh no. Yejun."
+
+s "Lei!"
+
+l "It wasn't on purpose!"
+
+r "Run!"
+
+"We break in a giggling mass and charge out as Yejun roars after us. In the end, he only catches Romel, who takes the wrath of the hit, eventually being rescued by Blair and Li."
 
 scene black
