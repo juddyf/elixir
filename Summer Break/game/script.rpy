@@ -1137,3 +1137,272 @@ r "Run!"
 "We break in a giggling mass and charge out as Yejun roars after us. In the end, he only catches Romel, who takes the wrath of the hit, eventually being rescued by Blair and Li."
 
 scene black
+
+
+centered "Chapter Six: {w=1.0} Lessons & Escapes"
+$ renpy.pause (1.0, hard=True)
+
+show white
+
+"A couple days later, Li decides that those aren't the only lessons we need to work on."
+
+m "Chinese?! Why?!" #chinese
+
+h "Because your Chinese has gotten very bad over the years, and I promised your parents that I would. That was one of the conditions to letting you come." #chinese
+
+m "...You're kidding."
+
+"He grins at me and starts pulling out textbooks and notebooks with Chinese characters on them. I look at them and groan, because I thought I had buried them in my basement where they couldn't be ever found."
+
+"That's how my days proceed for the next week. About halfway through, I discover that Sunny and Blair are getting Korean lessons from Quentin and Romel, though they ask for the lessons, so my resentment towards Li doesn't really die."
+
+"Deep down, I understand that it'll be a good skill, and my Chinese really could use work, but not so deep down, I just want to laze around."
+
+h "Mimi! Wake up!" #chinese
+
+m "Wah!"
+
+"I jerk up, my head having fallen to the table before me. I glare at Li, who just smiles amicably at me and taps on the book in front of me. We're doing traditional poems that day, which feels more useless than anything else, but it's good for enunciation, which I need 'a lot of work on'."
+
+"Feeling vaguely defeated, I recite the next one down. Li gives me corrections, and I try it again. As I'm going through the third time, Lei wanders in."
+
+l "Li, do you know where the cord is for connecting the TV to the laptop? I wanna practice {i}Rain{/i} on a big screen."
+
+"She names a song from Phantasy's most recent album, which I have by this point listened to enough times to be able to actually recognize most if not all of them."
+
+h "It should be downstairs in the cabinet."
+
+"He stands up to go downstairs with Lei. I let my head drop back to the table, but before a minute even passes, the door bursts open again, and Jongsu springs in. I jump up, surprised."
+
+j "Mimi! Let's go!"
+
+m "What? Go - go where?"
+
+"He holds out his hand and gestures urgently."
+
+j "Trust me!"
+
+menu:
+     "Hesitate.":
+          m "I... don't know. Li wouldn't be really happy."
+          j "Hyung will understand. Come on. It'll be fun, I promise."
+          "I hesitate for a moment more, but finally get up and hurry out of the room with Jongsu."
+     "Take his hand.":
+          $ romance_points +=1 #max = 5
+          "I reach out and grab his hand. Jongsu hauls me to my feet, and for a moment, I almost stumble, but his grip steadies me."
+          "A grin splits his face, and he runs with me out of the room."
+
+m "Where are we going?"
+
+j "You'll see. We gotta go fast, though."
+
+"We sneak down the stairs and then go charging out of the house as soon as we're clear of Li, who is helping Lei find her thing. She gives us a face as we run out, so I have a feeling whatever he's looking for is stashed upstairs where Li would never look."
+
+"He catches sight of us just as we make it outside."
+
+h "What - MIMI!"
+
+j "Runrunrunrunrun!"
+
+"I do so, charging out and then hopping into the car that is waiting outside. Minseo, in the driver's seat, makes a peace sign at me. About five seconds later, the door to the front swings open, and both Lei and Li come charging out, Lei in front. She also dives into the car, and Minseo steps on it, leaving Li behind."
+
+h "MIMI! YOU GET BACK HERE!" #chinese
+
+"A few seconds later, my phone rings, then Jongsu's, and Minseo's."
+
+m "At least, he doesn't have yours, Lei."
+
+"She grins, still breathing a little hard from her all out sprint. Meanwhile, Jongsu has picked up his call."
+
+j "You've been working her so hard. She deserves a break." #korean
+
+j "Yeah, I get that it's important, but so is relaxing! Come on, hyung!" #korean
+
+"There is some more furious discussion that Lei doesn't translate, as she is now chatting animatedly at Minseo."
+
+l "There's a fair in town."
+
+m "Is that where we're going? Are Sunny and Blair not coming?"
+
+l "They said they wanted to go another day."
+
+j "Come on, hyung!" #korean
+
+"There is a pause and then Jongsu gives me a huge grin."
+
+j "Thanks, hyung. I knew you'd understand." #korean
+
+"He hangs up the phone and gives me a victory sign. I can't help, but grin back at him."
+
+j "Crime accomplished."
+
+m "...You know, I'm concerned you learned to say that in English." 
+
+"We arrive at the fair about 20 minutes later, white tents spread all around and a ferris wheel in the distance. It's spinning idly, most of the seats empty at this point."
+
+k "Where should we start?"
+
+l "Games?"
+
+menu:
+     "Games!":
+          $ friendship_points +=1
+          m "Games!"
+          l "Games!"
+     "Uh...":
+          m "I don't know. I'm not really feeling it."
+          l "Oh come on, Mimi. Please?"
+          m "...Mmm, alright."
+
+"Lei cheers, and we go off to buy tokens at a rate that makes me wince, and then it's off to the metaphorical races."
+
+"I turn out to be a pretty good shot and manage to win a small, stuffed cat that I bestow onto Jongsu when I get tired of holding it."
+
+"Lei completely crushes Minseo at the obstacle course when he gets tangled in the ropes and then just gives up, which results in a lot of complaining from Lei that it wasn't a 'real win'."
+
+"There's a girl juggling knives at one station. She grins at us between throws, tosses all the knives high up, spins in a tight circle, and continues juggling, prompting a lot of cheering. She stops to talk to people every now and then, the knives coming down to a casual distance that still scare her companions."
+
+"Knife Juggler" "Thank you for watching guys! We're going to be doing a knife throwing show here later. Come see what an amazing markswoman I am!"
+
+"She waves between throws, catches two knives, throws them, catches a few others as those two are in the air, and bows with a flourish of the knives like a fan, before coming up and catching the rest. She bows again and then waves one more time."
+
+m "Wanna get some ice cream?"
+
+l "Yeah!"
+
+j "Sounds yummy."
+
+k "I could go for ice cream."
+
+"The guy running the ice cream stand also seems to be a performer, as he throws the ice cream up into the air and juggles it before handing it over the counter. Jongsu gasps when he pretends to drop it, looking as terrified as some of the children that I just burst into helpless giggles."
+
+j "What?"
+
+menu:
+     "You're cute.":
+          $ romance_points +=1
+          m "Nothing. Nothing. You're just - you're cute."
+          "Slowly, a grin spreads over his face, and he thanks the ice cream guy when he finally hands over the cone. He presents it to me with a flourish as dramatic as any of the performers have been."
+          "Unable to stop my smile, I give him a small bow and accept it."
+     "You look like a kid.":
+          "He pouts, which just ups the resemblance."
+          m "Not in a {i}bad{/i} way. Just a - well -"
+          "He sulks for a moment more until he gets his ice cream, and then he brightens again. I roll my eyes as the ice cream guy starts the same thing with my cone."
+
+"We stop by a face painting booth so that Lei and Jongsu can get butterflies on their face. After some persuasion, Minseo gets a dragonfly, and I choose a small cat under my right eye."
+
+"Almost immediately, I get the urge to itch the spot."
+
+m "...Don't do it, Mimi. Don't do it."
+
+l "Want something deep fried?"
+
+m "Yes. Anything to take my mind off this."
+
+"She looks at me, frowning, head tilted to one side."
+
+l "What's wrong with it? It suits you. You're just like a cat."
+
+m "Thanks. Cats are magnificent. But apparently, they're very itchy."
+
+"She nods her head wisely."
+
+l "That's cause of all the fur."
+
+m "I hate you."
+
+"Lei sticks her tongue out at me and then runs after Minseo, who is now looking at the lunch options, most of which are fried in enough oil to probably cook one of us."
+
+"After lunch, I lie back on the bench, feeling completely stuffed."
+
+j "Mimi, are you okay?"
+
+"His head appears above mine, eyes wide in mild concern."
+
+m "No. Just leave me to die here. I'm going to turn into a sphere and melt into fatty acid chains."
+
+j "That doesn't sound fun."
+
+m "It's probably not. It's just punishment for eating your own weight in deep fried things."
+
+j "You won't be punished for enjoying yourself."
+
+"He offers me part of a churro, sugar powder drifting off his fingers."
+
+m "You're trying to kill me, aren't you?"
+
+j "It's good! You should have some. It's so sweet."
+
+m "That's 'cause it's nothing, but sugar."
+
+"Not so reluctantly though, I lean up and bite the piece out of Jongsu's hand. He waits for me to chew and then offers me another one. I glare at him."
+
+m "You're just trying to fatten me up."
+
+j "You'd look cute as a sphere."
+
+"He beams, ducks when I throw the next piece at him."
+
+l "Mimi! Don't waste food."
+
+m "Do you - do you see what he's - okay, fine. Sorry."
+
+"I grumble and slowly rise to my feet, stretching. The sun, by this point, is blistering, and I'm sweating just standing."
+
+"We hide from it under one of those shower mists that are a huge waste of water, but are always blissfully cool. There's a water balloon fight later in the day, which we participate in and are terribly successful, even if we leave it completely soaked (like most of the population)."
+
+"When the sun has started to think about setting (though we all know it won't for another two hours at least), we're winding down, feeling lazy and warm. Lei and I are leaning against each other on a bench, Minseo to one side, Jongsu tossing some trash."
+
+k "Do you want to go on the ferris wheel?"
+
+"His tone is casual, but he glances at Lei, who obliviously fails to notice. I roll my eyes and nudge her."
+
+m "Ferris wheel?"
+
+l "Yeah, that sounds fun!"
+
+"She bounds towards the giant wheel, and I smirk at Minseo."
+
+m "You're welcome."
+
+k "Shouldn't I be saying that to you?"
+
+m "What?"
+
+"He raises an eyebrow at me and then follows Lei towards the ferris wheel."
+
+j "Oh hey, are we going on the ferris wheel?"
+
+"I glance behind me to see Jongsu has returned from the trashcan. He tugs at the collar of his shirt absently."
+
+m "...Yeah, let's go."
+
+if romance_points > 4:
+     "We follow them up to the ferris wheel and wait until the next cart comes. Jongsu takes the open door from the ride conductor and bows to me. Rolling my eyes, but unable to stop a grin, I step inside and scoot to the side so that Jongsu will have room."
+     "He hops in after me, and we begin our slow descent to the top. As we go, we catch sight of the sights that we'd spent the day enjoying."
+     m "We should tell Blair about the churros. She would love them."
+     j "Romel would, too. They can come together."
+     "There is suddenly warmth to the side, warmer even than the summer day, and Jongsu's head rests on my shoulder. His eyes have fluttered closed, and his eyelashes are casting shadows on his cheekbones."
+     "I watch him for a moment, redness gathering in my cheeks. Finally, as we reach the top, I lean my head on top of his and close my eyes as well."
+     m "Hey. This has been... really fun. Thanks."
+     "He hums appreciatively in his throat, and I let out a breath, allowing the summer air to wash over us."
+elif friendship_points > 4:
+     "We follow them up to the ferris wheel and all crowd into the same cart, shifting around until our cart sways unstably, Lei is giggling, and the conductor is glaring at us."
+     "He closes the door behind us with an audible snap, and then we begin to lurch upwards."
+     "The sudden movement sends Lei tumbling into me."
+     m "Ah! Help! I'm being crushed."
+     l "It's not my fault! It started really quickly!"
+     m "Still being crushed, Lei."
+     j "Hey, look! You can see that girl with the knife from here."
+     k "Is she still going?"
+     j "Yeah. She was so good. It was scary."
+     m "I think that's the point."
+     "We chatter incessantly as we rise upwards, a warmth rising in my chest as we go. I am full and comfortable and with friends who I care about more every single day."
+     "Maybe I should thank Li."
+else:
+     "We follow them up to the ferris wheel and all get into the same cart. We go up slowly and gently, taking in the sights."
+     "Everything looks like it is touched with fire and maybe just a bit of magic. I spot a balloon artist, who is currently making a giant pile that looks vaguely like a Golden Retriever."
+     "Though I know that I will soon have to go back to learning with Li, I find comfort in having gotten this break. And besides, it isn't as if Chinese isn't useful."
+     "We take several trips around the wheel, and when we step off, my entire mind feels lighter, and I feel ready to face whatever the world might throw at me."
+
+scene black
